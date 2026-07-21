@@ -1,9 +1,8 @@
 import { defineConfig } from "@theholocron/cli";
 
 export default defineConfig({
-	description: "Shared agent skill registry for theholocron projects.",
+	description: "Shared agent skill registry.",
 	repo: {
-		name: "theholocron/skills",
 		protection: "balanced",
 		topics: ["agent", "claude", "codex", "developer-tools", "skills"],
 		properties: {
