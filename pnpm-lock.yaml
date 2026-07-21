@@ -50,9 +50,6 @@ importers:
       '@theholocron/semantic-release-config':
         specifier: ^7.3.1
         version: 7.3.1(@semantic-release/changelog@6.0.3(semantic-release@25.0.8(typescript@7.0.2)))(@semantic-release/commit-analyzer@13.0.1(semantic-release@25.0.8(typescript@7.0.2)))(@semantic-release/exec@7.1.0(semantic-release@25.0.8(typescript@7.0.2)))(@semantic-release/git@10.0.1(semantic-release@25.0.8(typescript@7.0.2)))(@semantic-release/github@12.0.9(semantic-release@25.0.8(typescript@7.0.2)))(@semantic-release/release-notes-generator@14.1.1(semantic-release@25.0.8(typescript@7.0.2)))(conventional-changelog-conventionalcommits@10.2.1)(semantic-release@25.0.8(typescript@7.0.2))
-      '@theholocron/skills':
-        specifier: ^1.0.0
-        version: 1.0.0
       conventional-changelog-conventionalcommits:
         specifier: ^10.2.1
         version: 10.2.1
@@ -585,10 +582,6 @@ packages:
     peerDependenciesMeta:
       '@semantic-release/exec':
         optional: true
-
-  '@theholocron/skills@1.0.0':
-    resolution: {integrity: sha512-tk+3U0eJLzDSVIEcr08j1+GbSUb/HExLZrwFrWDKoYTFWhVHnk6SID+JobqwUfGSlVn65ffK7EFiUqYBIKQmbA==}
-    engines: {node: '>=22', pnpm: '>=10'}
 
   '@types/node@26.1.1':
     resolution: {integrity: sha512-nxAkRSVkN1Y0JC1W8ky/fTfkGsMmcrRsbx+3XoZE+rMOX71kLYTV7fLXpqud1GpbpP5TuffXFqfX7fH2GgZREw==}
@@ -2453,8 +2446,6 @@ snapshots:
       semantic-release: 25.0.8(typescript@7.0.2)
     optionalDependencies:
       '@semantic-release/exec': 7.1.0(semantic-release@25.0.8(typescript@7.0.2))
-
-  '@theholocron/skills@1.0.0': {}
 
   '@types/node@26.1.1':
     dependencies:
