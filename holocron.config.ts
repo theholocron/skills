@@ -15,7 +15,6 @@ export default defineConfig({
 	workflows: [
 		"test",
 		{ name: "release", with: { "run-build": false } },
-		"codeql",
 		"review",
 		"stale",
 		"greetings",
@@ -25,4 +24,6 @@ export default defineConfig({
 	providers: {
 		source: "github",
 	},
+	agent: "claude",
+	skills: ["git-safety", "pr-workflow", "commit-standards", "security-review"],
 });
