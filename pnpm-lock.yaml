@@ -7,11 +7,11 @@ settings:
 catalogs:
   holocron:
     '@theholocron/cli':
-      specifier: '>=2.0.0-alpha.0 <2.0.0'
-      version: 2.0.0-alpha.70
+      specifier: 2.0.0-alpha.71
+      version: 2.0.0-alpha.71
     '@theholocron/holocron-plugin-github':
-      specifier: '>=2.0.0-alpha.0 <2.0.0'
-      version: 2.0.0-alpha.0
+      specifier: 2.0.0-alpha.71
+      version: 2.0.0-alpha.71
 
 importers:
 
@@ -40,13 +40,13 @@ importers:
         version: 12.0.9(semantic-release@25.0.8(typescript@7.0.2))
       '@theholocron/cli':
         specifier: catalog:holocron
-        version: 2.0.0-alpha.70
+        version: 2.0.0-alpha.71
       '@theholocron/commitlint-config':
         specifier: ^7.3.1
         version: 7.3.1(@commitlint/cli@21.2.1(@types/node@26.1.1)(conventional-commits-parser@7.1.0)(typescript@7.0.2))(@commitlint/config-conventional@21.2.0)
       '@theholocron/holocron-plugin-github':
         specifier: catalog:holocron
-        version: 2.0.0-alpha.0(@theholocron/cli@2.0.0-alpha.70)
+        version: 2.0.0-alpha.71(@theholocron/cli@2.0.0-alpha.71)(@theholocron/github-client@1.2.0)
       '@theholocron/semantic-release-config':
         specifier: ^7.3.1
         version: 7.3.1(@semantic-release/changelog@6.0.3(semantic-release@25.0.8(typescript@7.0.2)))(@semantic-release/commit-analyzer@13.0.1(semantic-release@25.0.8(typescript@7.0.2)))(@semantic-release/exec@7.1.0(semantic-release@25.0.8(typescript@7.0.2)))(@semantic-release/git@10.0.1(semantic-release@25.0.8(typescript@7.0.2)))(@semantic-release/github@12.0.9(semantic-release@25.0.8(typescript@7.0.2)))(@semantic-release/release-notes-generator@14.1.1(semantic-release@25.0.8(typescript@7.0.2)))(conventional-changelog-conventionalcommits@10.2.1)(semantic-release@25.0.8(typescript@7.0.2))
@@ -538,8 +538,8 @@ packages:
     resolution: {integrity: sha512-tlqY9xq5ukxTUZBmoOp+m61cqwQD5pHJtFY3Mn8CA8ps6yghLH/Hw8UPdqg4OLmFW3IFlcXnQNmo/dh8HzXYIQ==}
     engines: {node: '>=18'}
 
-  '@theholocron/cli@2.0.0-alpha.70':
-    resolution: {integrity: sha512-BybztBhQoPqIzB1O1MSe4qwmzj3ZwkISEh2YnYE6JWESgbXiqT785oAcreY/TyVwHPHbiq0qfvywH01P03h8/w==}
+  '@theholocron/cli@2.0.0-alpha.71':
+    resolution: {integrity: sha512-/cCG4XgjDU+rW8Db+sqBUnN8wzAazHmk9n78IRYEgS0xu28AcgCPggDFKjgpWUbVemgoqRorMtuO+l8wOkm6qA==}
     hasBin: true
 
   '@theholocron/commitlint-config@7.3.1':
@@ -553,10 +553,11 @@ packages:
     resolution: {integrity: sha512-mRreQUfNInZ8AK3ygITOcLXiNxMEkjRMFFOOVlawwmC/xDXoeTDmtLkMF+b3PIqI5UmvatFd7xN7kaGtUI2tlg==}
     engines: {node: '>=22.0.0'}
 
-  '@theholocron/holocron-plugin-github@2.0.0-alpha.0':
-    resolution: {integrity: sha512-rBVmU6Lz/hXeOiCHW47VpkbcqGWGGaFCIyLvBXHc+ERugZzbCGjBEYSvrzfeOAD5m8nmRDeZnHZU2RGyli05xA==}
+  '@theholocron/holocron-plugin-github@2.0.0-alpha.71':
+    resolution: {integrity: sha512-kDxy1QpfB786C8eKkjpJceSxJ2Ym0aK9b7gxSGpvH8X4mQ6FLvncpROJoHkHDdbK8Ql2jpWpQWI+OTkxUKh0IA==}
     peerDependencies:
-      '@theholocron/cli': 2.0.0-alpha.0
+      '@theholocron/cli': 2.0.0-alpha.71
+      '@theholocron/github-client': ^1.1.0
 
   '@theholocron/http-client@1.2.0':
     resolution: {integrity: sha512-u3FdmcgUVCYgRWLLW33CyvshEOTNM+ZJcVl+H35kPhHhc0w31FJZWsIWKGDZyfvqOB7Ex4P4W29CL6uQZCx1mQ==}
@@ -2405,7 +2406,7 @@ snapshots:
 
   '@sindresorhus/merge-streams@4.0.0': {}
 
-  '@theholocron/cli@2.0.0-alpha.70':
+  '@theholocron/cli@2.0.0-alpha.71':
     dependencies:
       '@napi-rs/keyring': 1.3.0
       '@theholocron/github-client': 1.2.0
@@ -2428,9 +2429,10 @@ snapshots:
     transitivePeerDependencies:
       - vitest
 
-  '@theholocron/holocron-plugin-github@2.0.0-alpha.0(@theholocron/cli@2.0.0-alpha.70)':
+  '@theholocron/holocron-plugin-github@2.0.0-alpha.71(@theholocron/cli@2.0.0-alpha.71)(@theholocron/github-client@1.2.0)':
     dependencies:
-      '@theholocron/cli': 2.0.0-alpha.70
+      '@theholocron/cli': 2.0.0-alpha.71
+      '@theholocron/github-client': 1.2.0
       libsodium-wrappers: 0.7.16
 
   '@theholocron/http-client@1.2.0': {}
