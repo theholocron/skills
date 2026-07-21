@@ -2,6 +2,10 @@ node_modules/
 pnpm-debug.log*
 CHANGELOG.md
 
-# managed by holocron setup — skills / npx skills add
-/.agents/
-/.claude/skills/
+# managed by holocron setup — skills
+/.agents/skills/
+/.claude/skills/git-safety
+/.claude/skills/pr-workflow
+/.claude/skills/commit-standards
+/.claude/skills/security-review
+# end managed by holocron setup — skills
