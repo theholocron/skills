@@ -1,6 +1,6 @@
 ---
-name: holocron-plugin
-description: Scaffold a new @theholocron/holocron-plugin-<slug> package. INVOKE WHEN: user asks to add a new provider plugin to theholocron/holocron. Since v2.0.0-alpha, use the CLI command instead of this skill directly.
+name: holocron-skill-plugin
+description: Scaffold a new @theholocron/holocron-plugin-<slug> package. INVOKE WHEN: user asks to add a new provider plugin to theholocron/holocron. Since v2.0.0-alpha, use the CLI command instead. Invoked as /holocron-skill-plugin.
 ---
 
 <!-- editorconfig-checker-disable-file -->

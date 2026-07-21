@@ -1,6 +1,6 @@
 ---
-name: new-client
-description: Scaffold a new @theholocron/<slug>-client package in theholocron/clients. INVOKE WHEN: user asks to add a new HTTP client package to the clients monorepo.
+name: holocron-skill-client
+description: Scaffold a new @theholocron/<slug>-client package in theholocron/clients. INVOKE WHEN: user asks to add a new HTTP client package to the clients monorepo. Invoked as /holocron-skill-client.
 ---
 
 <!-- editorconfig-checker-disable-file -->

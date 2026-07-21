@@ -19,9 +19,9 @@ agents) can load as a slash command.
 
 | Skill | Description |
 |-------|-------------|
-| [`configs-package`](./skills/configs-package/SKILL.md) | Scaffold a new `@theholocron/*-config` package in `theholocron/configs` |
-| [`new-client`](./skills/new-client/SKILL.md) | Scaffold a new `@theholocron/*-client` package in `theholocron/clients` |
-| [`holocron-plugin`](./skills/holocron-plugin/SKILL.md) | Scaffold or migrate a new `holocron-plugin-*` package |
+| [`holocron-skill-config`](./skills/holocron-skill-config/SKILL.md) | Scaffold a new `@theholocron/*-config` package in `theholocron/configs` |
+| [`holocron-skill-client`](./skills/holocron-skill-client/SKILL.md) | Scaffold a new `@theholocron/*-client` package in `theholocron/clients` |
+| [`holocron-skill-plugin`](./skills/holocron-skill-plugin/SKILL.md) | Scaffold or migrate a new `holocron-plugin-*` package |
 
 ### External (Vercel)
 

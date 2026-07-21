@@ -1,6 +1,6 @@
 ---
-name: configs-package
-description: Scaffold a new shareable config package in theholocron/configs. INVOKE WHEN: user asks to add a new @theholocron/<tool>-config package to the configs monorepo.
+name: holocron-skill-config
+description: Scaffold a new shareable config package in theholocron/configs. INVOKE WHEN: user asks to add a new @theholocron/<tool>-config package to the configs monorepo. Invoked as /holocron-skill-config.
 ---
 
 <!-- editorconfig-checker-disable-file -->
