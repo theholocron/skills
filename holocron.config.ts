@@ -3,6 +3,7 @@ import { defineConfig } from "@theholocron/cli";
 export default defineConfig({
 	description: "Shared agent skill registry.",
 	repo: {
+		teams: [{ slug: "gatekeepers", permission: "maintain" }],
 		protection: "balanced",
 		topics: ["agent", "claude", "codex", "developer-tools", "skills"],
 		properties: {
