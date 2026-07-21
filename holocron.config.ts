@@ -26,4 +26,6 @@ export default defineConfig({
 	providers: {
 		source: "github",
 	},
+	agent: "claude",
+	skills: ["git-safety", "pr-workflow", "commit-standards", "security-review"],
 });
