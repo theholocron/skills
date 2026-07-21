@@ -25,6 +25,7 @@
   },
   "files": [
     "skills/",
+    "skills-lock.json",
     "README.md"
   ],
   "scripts": {

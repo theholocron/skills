@@ -9,9 +9,11 @@ Shared agent skill registry.
 Each skill is a directory under `skills/` containing a `SKILL.md` file that Claude Code (and compatible
 agents) can load as a slash command.
 
-## Available skills
+## Owned skills
 
-### Workflow & safety (theholocron)
+Skills authored and maintained in this repo. Published inside the npm package.
+
+### Workflow & safety
 
 | Skill | Description |
 |-------|-------------|
@@ -28,18 +30,24 @@ agents) can load as a slash command.
 | [`holocron-skill-client`](./skills/holocron-skill-client/SKILL.md) | Scaffold a new `@theholocron/*-client` package in `theholocron/clients` |
 | [`holocron-skill-plugin`](./skills/holocron-skill-plugin/SKILL.md) | Scaffold or migrate a new `holocron-plugin-*` package |
 
-### External (Vercel)
+## External skills
+
+Tracked in [`skills-lock.json`](./skills-lock.json) with source provenance and content hash.
+Not committed to this repo — fetched from upstream by `holocron skills update` (planned).
 
 | Skill | Source | Description |
 |-------|--------|-------------|
-| [`vercel-cli`](./skills/vercel-cli/SKILL.md) | [vercel/vercel-plugin](https://github.com/vercel/vercel-plugin) | Vercel CLI expert: deploy, env vars, logs, domains, project linking |
-| [`turbopack`](./skills/turbopack/SKILL.md) | [vercel/vercel-plugin](https://github.com/vercel/vercel-plugin) | Turbopack bundler: HMR, CSS, tree shaking, webpack migration |
+| `find-skills` | [vercel-labs/skills](https://github.com/vercel-labs/skills) | Discover and install agent skills from the skills.sh ecosystem |
+| `frontend-design` | [anthropics/skills](https://github.com/anthropics/skills) | Distinctive, intentional UI design guidance |
+| `vercel-cli` | [vercel/vercel-plugin](https://github.com/vercel/vercel-plugin) | Vercel CLI: deploy, env vars, logs, domains, project linking |
+| `turbopack` | [vercel/vercel-plugin](https://github.com/vercel/vercel-plugin) | Turbopack bundler: HMR, CSS, tree shaking, webpack migration |
 
 ## Installation via `holocron setup`
 
 Skills are installed by `holocron setup` based on the `skills` field in
-`holocron.config.ts`. They are written to your agent's skills directory and
-**gitignored** — treated as dependencies, not source.
+`holocron.config.ts`. They are written to `.agents/skills/<name>/` with a
+symlink at the agent-specific path, and **gitignored** — treated as dependencies,
+not source.
 
 ```typescript
 // holocron.config.ts
@@ -61,22 +69,24 @@ GITHUB_TOKEN=$(gh auth token) pnpm exec holocron setup
 
 ## Manual installation
 
-Copy a skill directory into your project's `.claude/skills/`:
+Copy a skill directory into your project's `.agents/skills/` and symlink it:
 
 ```sh
-cp -r node_modules/@theholocron/skills/skills/git-safety .claude/skills/
+cp -r node_modules/@theholocron/skills/skills/git-safety .agents/skills/
+ln -s ../../.agents/skills/git-safety .claude/skills/git-safety
 ```
 
-Add it to `.gitignore` since `holocron setup` manages it:
+Add both to `.gitignore`:
 
 ```gitignore
 # managed by holocron setup — skills
-/.claude/skills/git-safety/
+/.agents/skills/
+/.claude/skills/git-safety
 ```
 
 ## Contributing
 
-### Adding a new skill
+### Adding an owned skill
 
 1. Create `skills/<name>/SKILL.md` with the frontmatter format:
    ```markdown
@@ -88,10 +98,11 @@ Add it to `.gitignore` since `holocron setup` manages it:
    …
    ```
 2. Run `pnpm test` — the smoke test checks that every skill dir has a `SKILL.md`.
-3. Update this README with a row in the relevant table.
+3. Update this README with a row in the owned skills table.
 4. Open a PR with a `feat:` commit — semantic-release handles versioning.
 
-### Importing an external skill
+### Registering an external skill
 
-Copy the `SKILL.md` (and any supporting files) into `skills/<name>/`, credit the
-source in the README table, and note any upstream license requirements.
+Run `npx skills add <repo> --skill <name>` from this repo root. This records the
+skill in `skills-lock.json` with its source and content hash but does **not** copy
+it into `skills/` — external skill content is fetched at install time.
