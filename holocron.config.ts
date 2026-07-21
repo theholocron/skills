@@ -15,7 +15,6 @@ export default defineConfig({
 	workflows: [
 		"test",
 		{ name: "release", with: { "run-build": false } },
-		"codeql",
 		"review",
 		"stale",
 		"greetings",
