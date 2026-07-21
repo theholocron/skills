@@ -29,7 +29,6 @@
     "README.md"
   ],
   "scripts": {
-    "lint": "eslint .",
     "test": "node --test test/index.mjs"
   },
   "devDependencies": {
@@ -42,12 +41,9 @@
     "@semantic-release/github": "^12.0.9",
     "@theholocron/cli": "catalog:holocron",
     "@theholocron/commitlint-config": "^7.3.1",
-    "@theholocron/eslint-config": "^7.3.1",
     "@theholocron/holocron-plugin-github": "catalog:holocron",
     "@theholocron/semantic-release-config": "^7.3.1",
     "conventional-changelog-conventionalcommits": "^10.2.1",
-    "eslint": "^10.7.0",
-    "globals": "^17.7.0",
     "semantic-release": "^25.0.7"
   },
   "packageManager": "pnpm@10.34.4",
