@@ -19,6 +19,10 @@
   "license": "MIT",
   "author": "Newton Koumantzelis",
   "type": "module",
+  "exports": {
+    "./package.json": "./package.json",
+    "./skills/*": "./skills/*"
+  },
   "files": [
     "skills/",
     "README.md"
