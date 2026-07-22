@@ -7,10 +7,10 @@ settings:
 catalogs:
   holocron:
     '@theholocron/cli':
-      specifier: 2.0.0-alpha.71
+      specifier: '>=2.0.0-alpha.0 <2.0.0'
       version: 2.0.0-alpha.71
     '@theholocron/holocron-plugin-github':
-      specifier: 2.0.0-alpha.71
+      specifier: '>=2.0.0-alpha.0 <2.0.0'
       version: 2.0.0-alpha.71
 
 importers:
