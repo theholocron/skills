@@ -1,9 +1,11 @@
 import { defineConfig } from "@theholocron/semantic-release-config";
 
-export default defineConfig({
+const config = defineConfig({
 	branches: ["main", { name: "alpha", prerelease: true }],
-	exec: {
-		publishCmd:
-			"pnpm publish --access public --no-git-checks --tag ${nextRelease.channel || 'latest'}",
-	},
 });
+
+// Insert @semantic-release/npm between changelog and git so it bumps
+// package.json and publishes to npm before @semantic-release/git commits the bump.
+config.plugins.splice(3, 0, ["@semantic-release/npm", { access: "public" }]);
+
+export default config;
