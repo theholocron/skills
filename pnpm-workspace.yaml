@@ -3,6 +3,10 @@ catalogs:
   holocron:
     '@theholocron/cli': '>=2.0.0-alpha.0 <2.0.0'
     '@theholocron/holocron-plugin-github': '>=2.0.0-alpha.0 <2.0.0'
+  # Shared configs — release in lockstep; bump all entries together.
+  configs:
+    '@theholocron/commitlint-config': ^7.5.0
+    '@theholocron/semantic-release-config': ^7.5.0
 
 # Force a single TypeScript version across the graph so cosmiconfig doesn't
 # pick up a transitive TypeScript 7 when loading .ts config files.
