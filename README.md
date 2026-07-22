@@ -29,7 +29,6 @@ Skills authored and maintained in this repo. Published inside the npm package.
 | [`holocron-skill-config`](./skills/holocron-skill-config/SKILL.md) | Scaffold a new `@theholocron/*-config` package in `theholocron/configs` |
 | [`holocron-skill-client`](./skills/holocron-skill-client/SKILL.md) | Scaffold a new `@theholocron/*-client` package in `theholocron/clients` |
 | [`holocron-skill-plugin`](./skills/holocron-skill-plugin/SKILL.md) | Scaffold or migrate a new `holocron-plugin-*` package |
-| [`turborepo`](./skills/turborepo/SKILL.md) | Turborepo task pipeline configuration and cache optimization |
 
 ## External skills
 
@@ -42,6 +41,7 @@ Not committed to this repo — fetched from upstream by `holocron skills update`
 | `frontend-design` | [anthropics/skills](https://github.com/anthropics/skills) | Distinctive, intentional UI design guidance |
 | `vercel-cli` | [vercel/vercel-plugin](https://github.com/vercel/vercel-plugin) | Vercel CLI: deploy, env vars, logs, domains, project linking |
 | `turbopack` | [vercel/vercel-plugin](https://github.com/vercel/vercel-plugin) | Turbopack bundler: HMR, CSS, tree shaking, webpack migration |
+| `turborepo` | [vercel/turbo](https://github.com/vercel/turbo) | Turborepo task pipeline configuration and cache optimization |
 
 ## Installation via `holocron setup`
 
