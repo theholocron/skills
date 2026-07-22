@@ -37,6 +37,7 @@ format. Skills are installed into consuming repos by `holocron setup` based on t
 | `pr-workflow` | opening a PR, merging, branch management |
 | `commit-standards` | writing a commit message |
 | `security-review` | reviewing code for security issues |
+| `turborepo` | editing turbo.json, optimizing caching, debugging cache misses |
 
 ## Quality
 

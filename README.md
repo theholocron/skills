@@ -29,6 +29,7 @@ Skills authored and maintained in this repo. Published inside the npm package.
 | [`holocron-skill-config`](./skills/holocron-skill-config/SKILL.md) | Scaffold a new `@theholocron/*-config` package in `theholocron/configs` |
 | [`holocron-skill-client`](./skills/holocron-skill-client/SKILL.md) | Scaffold a new `@theholocron/*-client` package in `theholocron/clients` |
 | [`holocron-skill-plugin`](./skills/holocron-skill-plugin/SKILL.md) | Scaffold or migrate a new `holocron-plugin-*` package |
+| [`turborepo`](./skills/turborepo/SKILL.md) | Turborepo task pipeline configuration and cache optimization |
 
 ## External skills
 
