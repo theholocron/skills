@@ -8,10 +8,7 @@ catalogs:
   configs:
     '@theholocron/commitlint-config':
       specifier: ^7.5.0
-      version: 7.5.0
-    '@theholocron/semantic-release-config':
-      specifier: ^7.5.0
-      version: 7.5.0
+      version: 7.6.1
   holocron:
     '@theholocron/cli':
       specifier: '>=2.0.0-alpha.0 <2.0.0'
@@ -53,13 +50,13 @@ importers:
         version: 2.0.0-alpha.71
       '@theholocron/commitlint-config':
         specifier: catalog:configs
-        version: 7.5.0(@commitlint/cli@21.2.1(@types/node@26.1.1)(conventional-commits-parser@7.1.0)(typescript@5.9.3))(@commitlint/config-conventional@21.2.0)
+        version: 7.6.1(@commitlint/cli@21.2.1(@types/node@26.1.1)(conventional-commits-parser@7.1.0)(typescript@5.9.3))(@commitlint/config-conventional@21.2.0)
       '@theholocron/holocron-plugin-github':
         specifier: catalog:holocron
         version: 2.0.0-alpha.71(@theholocron/cli@2.0.0-alpha.71)(@theholocron/github-client@1.2.0)
       '@theholocron/semantic-release-config':
-        specifier: catalog:configs
-        version: 7.5.0(@semantic-release/changelog@6.0.3(semantic-release@25.0.8(typescript@5.9.3)))(@semantic-release/commit-analyzer@13.0.1(semantic-release@25.0.8(typescript@5.9.3)))(@semantic-release/exec@7.1.0(semantic-release@25.0.8(typescript@5.9.3)))(@semantic-release/git@10.0.1(semantic-release@25.0.8(typescript@5.9.3)))(@semantic-release/github@12.0.9(semantic-release@25.0.8(typescript@5.9.3)))(@semantic-release/release-notes-generator@14.1.1(semantic-release@25.0.8(typescript@5.9.3)))(conventional-changelog-conventionalcommits@10.2.1)(semantic-release@25.0.8(typescript@5.9.3))
+        specifier: 7.6.1
+        version: 7.6.1(@semantic-release/changelog@6.0.3(semantic-release@25.0.8(typescript@5.9.3)))(@semantic-release/commit-analyzer@13.0.1(semantic-release@25.0.8(typescript@5.9.3)))(@semantic-release/exec@7.1.0(semantic-release@25.0.8(typescript@5.9.3)))(@semantic-release/git@10.0.1(semantic-release@25.0.8(typescript@5.9.3)))(@semantic-release/github@12.0.9(semantic-release@25.0.8(typescript@5.9.3)))(@semantic-release/release-notes-generator@14.1.1(semantic-release@25.0.8(typescript@5.9.3)))(conventional-changelog-conventionalcommits@10.2.1)(semantic-release@25.0.8(typescript@5.9.3))
       conventional-changelog-conventionalcommits:
         specifier: ^10.2.1
         version: 10.2.1
@@ -555,8 +552,8 @@ packages:
     resolution: {integrity: sha512-/cCG4XgjDU+rW8Db+sqBUnN8wzAazHmk9n78IRYEgS0xu28AcgCPggDFKjgpWUbVemgoqRorMtuO+l8wOkm6qA==}
     hasBin: true
 
-  '@theholocron/commitlint-config@7.5.0':
-    resolution: {integrity: sha512-O3vw7eef63BfWLGJRbIIGZXVcMDCwpz2+S4YQYyHfdIYA4RE8c6fif22t8Oz/97u+o7c3cshHqsH82LrmQigKA==}
+  '@theholocron/commitlint-config@7.6.1':
+    resolution: {integrity: sha512-Tn9zBJEGqdXqcfibAV/xwpIRxMCOWTrZj/+65GAhI/TBd7eiS816RaHLqJcR44C0nHm5ZeLl7s9S54fb6MXHlg==}
     engines: {node: '>=22.0.0'}
     peerDependencies:
       '@commitlint/cli': ^21
@@ -581,8 +578,8 @@ packages:
       vitest:
         optional: true
 
-  '@theholocron/semantic-release-config@7.5.0':
-    resolution: {integrity: sha512-XGWGb1uldMP9j1qDaCvr0qOMc+VGCubsp4HAM+dsi4RCr9TIR+B3IswEmRoMvHCrTq6Mt6JFYr9yVb3YVRDrlQ==}
+  '@theholocron/semantic-release-config@7.6.1':
+    resolution: {integrity: sha512-XIDKV+8jE2vbOvXfKDl+1TDqsSa5puOGunxDXfwLwDBc7OoFHXLVLUfWQucvWBtXhxYiPfDhe4lSfe4Cdy+Bog==}
     engines: {node: '>=22.0.0'}
     peerDependencies:
       '@semantic-release/changelog': ^6
@@ -2311,7 +2308,7 @@ snapshots:
     transitivePeerDependencies:
       - vitest
 
-  '@theholocron/commitlint-config@7.5.0(@commitlint/cli@21.2.1(@types/node@26.1.1)(conventional-commits-parser@7.1.0)(typescript@5.9.3))(@commitlint/config-conventional@21.2.0)':
+  '@theholocron/commitlint-config@7.6.1(@commitlint/cli@21.2.1(@types/node@26.1.1)(conventional-commits-parser@7.1.0)(typescript@5.9.3))(@commitlint/config-conventional@21.2.0)':
     dependencies:
       '@commitlint/cli': 21.2.1(@types/node@26.1.1)(conventional-commits-parser@7.1.0)(typescript@5.9.3)
       '@commitlint/config-conventional': 21.2.0
@@ -2330,7 +2327,7 @@ snapshots:
 
   '@theholocron/http-client@1.2.0': {}
 
-  '@theholocron/semantic-release-config@7.5.0(@semantic-release/changelog@6.0.3(semantic-release@25.0.8(typescript@5.9.3)))(@semantic-release/commit-analyzer@13.0.1(semantic-release@25.0.8(typescript@5.9.3)))(@semantic-release/exec@7.1.0(semantic-release@25.0.8(typescript@5.9.3)))(@semantic-release/git@10.0.1(semantic-release@25.0.8(typescript@5.9.3)))(@semantic-release/github@12.0.9(semantic-release@25.0.8(typescript@5.9.3)))(@semantic-release/release-notes-generator@14.1.1(semantic-release@25.0.8(typescript@5.9.3)))(conventional-changelog-conventionalcommits@10.2.1)(semantic-release@25.0.8(typescript@5.9.3))':
+  '@theholocron/semantic-release-config@7.6.1(@semantic-release/changelog@6.0.3(semantic-release@25.0.8(typescript@5.9.3)))(@semantic-release/commit-analyzer@13.0.1(semantic-release@25.0.8(typescript@5.9.3)))(@semantic-release/exec@7.1.0(semantic-release@25.0.8(typescript@5.9.3)))(@semantic-release/git@10.0.1(semantic-release@25.0.8(typescript@5.9.3)))(@semantic-release/github@12.0.9(semantic-release@25.0.8(typescript@5.9.3)))(@semantic-release/release-notes-generator@14.1.1(semantic-release@25.0.8(typescript@5.9.3)))(conventional-changelog-conventionalcommits@10.2.1)(semantic-release@25.0.8(typescript@5.9.3))':
     dependencies:
       '@semantic-release/changelog': 6.0.3(semantic-release@25.0.8(typescript@5.9.3))
       '@semantic-release/commit-analyzer': 13.0.1(semantic-release@25.0.8(typescript@5.9.3))
