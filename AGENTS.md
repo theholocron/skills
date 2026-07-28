@@ -31,12 +31,24 @@ format. Skills are installed into consuming repos by `holocron setup` based on t
 
 ## Available skills
 
+### Workflow & safety
+
 | Skill | Trigger |
 |-------|---------|
 | `git-safety` | git push, force push, destructive git ops |
 | `pr-workflow` | opening a PR, merging, branch management |
 | `commit-standards` | writing a commit message |
 | `security-review` | reviewing code for security issues |
+
+### Project-specific (theholocron)
+
+| Skill | Trigger |
+|-------|---------|
+| `holocron-skill-config` | scaffolding a new `@theholocron/*-config` package |
+| `holocron-skill-client` | scaffolding a new `@theholocron/*-client` package |
+| `holocron-skill-plugin` | scaffolding or migrating a new `holocron-plugin-*` package |
+| `holocron-skill-util` | scaffolding a new `@theholocron/*-utils` package |
+| `holocron-skill-skill` | adding a new skill to the skills repo |
 
 ## Quality
 
