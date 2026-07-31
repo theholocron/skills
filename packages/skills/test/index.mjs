@@ -4,13 +4,15 @@ import { readdirSync, existsSync } from "node:fs";
 import { join } from "node:path";
 import { fileURLToPath } from "node:url";
 
-const root = fileURLToPath(new URL("../skills", import.meta.url));
+const EXCLUDED = new Set(["node_modules", "test"]);
+
+const root = fileURLToPath(new URL("..", import.meta.url));
 const skills = readdirSync(root, { withFileTypes: true })
-	.filter((d) => d.isDirectory())
+	.filter((d) => d.isDirectory() && !d.name.startsWith(".") && !EXCLUDED.has(d.name))
 	.map((d) => d.name);
 
 for (const skill of skills) {
-	test(`skills/${skill}/SKILL.md exists`, () => {
+	test(`${skill}/SKILL.md exists`, () => {
 		const skillPath = join(root, skill, "SKILL.md");
 		assert.ok(existsSync(skillPath), `Missing SKILL.md for skill: ${skill}`);
 	});
