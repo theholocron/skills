@@ -6,6 +6,7 @@ const packageList = packages.map((p) => `'${p}'`).join(",");
 
 export default defineConfig({
 	branches: ["main", { name: "alpha", prerelease: true }],
+	assets: ["CHANGELOG.md", "package.json", "packages/skills/package.json", "packages/skills-docs/package.json"],
 	exec: {
 		prepareCmd: `node -e "const fs=require('fs'),v='\${nextRelease.version}'; [${packageList}].forEach(p=>{const f=p+'/package.json',j=JSON.parse(fs.readFileSync(f));j.version=v;fs.writeFileSync(f,JSON.stringify(j,null,2)+'\\n');});"`,
 		publishCmd:
