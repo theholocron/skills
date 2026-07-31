@@ -1,3 +1,7 @@
+packages:
+  - 'docs'
+  - 'packages/*'
+
 # Holocron CLI and plugins — pinned in lockstep; bump together when running setup.
 catalogs:
   holocron:
