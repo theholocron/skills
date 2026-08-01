@@ -21,7 +21,7 @@ export default defineConfig({
 		"stale",
 		"greetings",
 		"dependencies",
-		"bookkeeping-pr",
+		"bookkeeping",
 		{ name: "deploy-docs", with: { name: "skills", "use-turbo": false }, paths: ["packages/skills-docs/**"] },
 	],
 	providers: {
