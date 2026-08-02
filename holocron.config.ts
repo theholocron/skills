@@ -16,7 +16,7 @@ export default defineConfig({
 	},
 	workflows: [
 		"test",
-		{ name: "release", with: { "run-build": false } },
+		"release",
 		"review",
 		"stale",
 		"greetings",
