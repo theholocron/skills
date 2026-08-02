@@ -36,6 +36,29 @@ feat!: remove deprecated auth endpoint
 BREAKING CHANGE: the /v1/auth endpoint has been removed; use /v2/auth
 ```
 
+## Gitmoji
+
+Prefix commit descriptions with the appropriate emoji so intent is visible at a glance in git log. Place the emoji after the colon so the type is still the first token (semantic-release and commitlint parse from the start of the subject):
+
+```
+feat: ✨ add OAuth2 login flow
+fix: 🐛 handle null session on logout
+docs: 📝 update deploy prerequisites
+```
+
+| Type | Emoji |
+|------|-------|
+| `feat` | ✨ |
+| `fix` | 🐛 |
+| `docs` | 📝 |
+| `chore` | 🔧 |
+| `ci` | 👷 |
+| `refactor` | ♻️ |
+| `test` | 🧪 |
+| `perf` | ⚡️ |
+| `style` | 💄 |
+| `revert` | ⏪ |
+
 ## DCO — always `git commit -s`
 
 The `Signed-off-by:` trailer is required on every commit in theholocron repos.
