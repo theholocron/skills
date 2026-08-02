@@ -9,3 +9,5 @@ CHANGELOG.md
 /.claude/skills/commit-standards
 /.claude/skills/security-review
 # end managed by holocron setup — skills
+docs/.astro/
+docs/dist/
