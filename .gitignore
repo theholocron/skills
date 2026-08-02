@@ -8,6 +8,7 @@ CHANGELOG.md
 /.claude/skills/pr-workflow
 /.claude/skills/commit-standards
 /.claude/skills/security-review
+/.claude/skills/turborepo
 # end managed by holocron setup — skills
 docs/.astro/
 docs/dist/
