@@ -24,6 +24,7 @@
     "@semantic-release/github": "^12.0.9",
     "@theholocron/cli": "catalog:holocron",
     "@theholocron/commitlint-config": "catalog:configs",
+    "@theholocron/prettier-config": "catalog:configs",
     "@theholocron/holocron-plugin-github": "catalog:holocron",
     "@theholocron/semantic-release-config": "catalog:configs",
     "conventional-changelog-conventionalcommits": "^10.2.1",
