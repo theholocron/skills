@@ -12,7 +12,8 @@
   "license": "MIT",
   "author": "Newton Koumantzelis",
   "scripts": {
-    "test": "pnpm --filter @theholocron/skills test"
+    "test": "pnpm --filter @theholocron/skills test",
+    "test:coverage": "pnpm --filter @theholocron/skills test:coverage"
   },
   "devDependencies": {
     "@commitlint/cli": "^21.2.1",
