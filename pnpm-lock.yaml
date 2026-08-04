@@ -9,6 +9,9 @@ catalogs:
     '@theholocron/commitlint-config':
       specifier: ^7.5.0
       version: 7.6.1
+    '@theholocron/prettier-config':
+      specifier: ^7.8.1
+      version: 7.8.1
     '@theholocron/semantic-release-config':
       specifier: ^7.5.0
       version: 7.6.1
@@ -57,6 +60,9 @@ importers:
       '@theholocron/holocron-plugin-github':
         specifier: catalog:holocron
         version: 3.4.0(@theholocron/cli@3.5.0(@opentelemetry/core@2.10.0(@opentelemetry/api@1.9.1)))(@theholocron/github-client@1.5.5)
+      '@theholocron/prettier-config':
+        specifier: catalog:configs
+        version: 7.8.1(prettier@3.9.6)
       '@theholocron/semantic-release-config':
         specifier: catalog:configs
         version: 7.6.1(@semantic-release/changelog@6.0.3(semantic-release@25.0.8(typescript@5.9.3)))(@semantic-release/commit-analyzer@13.0.1(semantic-release@25.0.8(typescript@5.9.3)))(@semantic-release/exec@7.1.0(semantic-release@25.0.8(typescript@5.9.3)))(@semantic-release/git@10.0.1(semantic-release@25.0.8(typescript@5.9.3)))(@semantic-release/github@12.0.9(semantic-release@25.0.8(typescript@5.9.3)))(@semantic-release/release-notes-generator@14.1.1(semantic-release@25.0.8(typescript@5.9.3)))(conventional-changelog-conventionalcommits@10.2.1)(semantic-release@25.0.8(typescript@5.9.3))
@@ -1310,6 +1316,12 @@ packages:
     peerDependenciesMeta:
       vitest:
         optional: true
+
+  '@theholocron/prettier-config@7.8.1':
+    resolution: {integrity: sha512-W+1ORzRAps5t/otK9HcKhQ2fzryFWZ1smuWvyqPgxMp63a6NddySuYHYXEGy+ifozTHIqTu/8IZrMn8xLnS++A==}
+    engines: {node: '>=22.0.0'}
+    peerDependencies:
+      prettier: ^3
 
   '@theholocron/semantic-release-config@7.6.1':
     resolution: {integrity: sha512-XIDKV+8jE2vbOvXfKDl+1TDqsSa5puOGunxDXfwLwDBc7OoFHXLVLUfWQucvWBtXhxYiPfDhe4lSfe4Cdy+Bog==}
@@ -3188,6 +3200,11 @@ packages:
   postcss@8.5.25:
     resolution: {integrity: sha512-DTPx3RWSSnWyzLxQnlH0rJP+EW5ekl16ZU4/psbIhA0e53kJfdgaN5vKM+xP7yJtXVu+nfdVFmlgFDEKAe4Pyw==}
     engines: {node: ^10 || ^12 || >=14}
+
+  prettier@3.9.6:
+    resolution: {integrity: sha512-OpN0zzVdiaiAhxpuuj5efpIS4sY9j7bY6uR5mnj5yPzGkdkjNKSJeUThPb60Jw29QuAZgA4o+/iB49kFiaBX6g==}
+    engines: {node: '>=14'}
+    hasBin: true
 
   pretty-ms@9.3.0:
     resolution: {integrity: sha512-gjVS5hOP+M3wMm5nmNOucbIrqudzs9v/57bWRHQWLYklXqoXKrVfYW2W9+glfGsqtPgpiz5WwyEEB+ksXIx3gQ==}
@@ -5233,6 +5250,10 @@ snapshots:
       libsodium-wrappers: 0.8.4
 
   '@theholocron/http-client@1.5.5': {}
+
+  '@theholocron/prettier-config@7.8.1(prettier@3.9.6)':
+    dependencies:
+      prettier: 3.9.6
 
   '@theholocron/semantic-release-config@7.6.1(@semantic-release/changelog@6.0.3(semantic-release@25.0.8(typescript@5.9.3)))(@semantic-release/commit-analyzer@13.0.1(semantic-release@25.0.8(typescript@5.9.3)))(@semantic-release/exec@7.1.0(semantic-release@25.0.8(typescript@5.9.3)))(@semantic-release/git@10.0.1(semantic-release@25.0.8(typescript@5.9.3)))(@semantic-release/github@12.0.9(semantic-release@25.0.8(typescript@5.9.3)))(@semantic-release/release-notes-generator@14.1.1(semantic-release@25.0.8(typescript@5.9.3)))(conventional-changelog-conventionalcommits@10.2.1)(semantic-release@25.0.8(typescript@5.9.3))':
     dependencies:
@@ -7382,6 +7403,8 @@ snapshots:
       nanoid: 3.3.16
       picocolors: 1.1.1
       source-map-js: 1.2.1
+
+  prettier@3.9.6: {}
 
   pretty-ms@9.3.0:
     dependencies:
