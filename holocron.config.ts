@@ -22,7 +22,7 @@ export default defineConfig({
 		"greetings",
 		"dependencies",
 		"bookkeeping",
-		{ name: "deploy-docs", with: { name: "skills", "use-turbo": false }, paths: ["packages/skills-docs/**"] },
+		{ name: "deploy-docs", with: { name: "skills" }, paths: ["docs/**"] },
 	],
 	providers: {
 		source: "github",
