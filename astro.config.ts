@@ -5,7 +5,9 @@ import skillsConfig from "@theholocron/skills-docs";
 
 export default defineConfig({
 	docs: skillsConfig,
-	importMetaUrl: import.meta.url,
 	starlight,
 	docsTheme,
+	srcDir: "./docs/src",
+	outDir: "./docs/dist",
+	publicDir: "./docs/public",
 });
