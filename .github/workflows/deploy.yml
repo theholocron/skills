@@ -1,15 +1,14 @@
 # AUTO-GENERATED — do not edit directly.
 # Source:  theholocron/holocron · packages/cli/src/commands/setup-workflows.ts
-# Tool:    holocron setup
-# Changes: run `holocron setup` to regenerate.
-name: Deploy Docs
+# Tool:    holocron sync-github
+# Changes: edit source in theholocron/holocron and push to alpha or main.
+name: Deploy
 
 on: # yamllint disable-line rule:truthy
   push:
     branches: [main]
     paths:
       - docs/**
-      - packages/skills-docs/**
   workflow_dispatch:
 
 concurrency:
@@ -22,10 +21,9 @@ permissions:
   id-token: write
 
 jobs:
-  deploy-docs:
-    name: Deploy Docs
-    uses: theholocron/.github/.github/workflows/deploy-docs.yml@main
+  deploy:
+    name: Deploy
+    uses: theholocron/.github/.github/workflows/deploy.yml@main
     with:
-      name: skills
-      use-turbo: false
+      type: docs
     secrets: inherit
