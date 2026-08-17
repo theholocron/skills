@@ -4,7 +4,7 @@ import { readdirSync, existsSync } from "node:fs";
 import { join } from "node:path";
 import { fileURLToPath } from "node:url";
 
-const EXCLUDED = new Set(["node_modules", "test"]);
+const EXCLUDED = new Set(["docs", "node_modules", "packages", "test"]);
 
 const root = fileURLToPath(new URL("..", import.meta.url));
 const skills = readdirSync(root, { withFileTypes: true })

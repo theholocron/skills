@@ -28,5 +28,5 @@ export default defineConfig({
 		source: "github",
 	},
 	agent: "claude",
-	skills: ["git-safety", "pr-workflow", "commit-standards", "security-review", "turborepo"],
+	skills: ["git-safety", "pr-workflow", "commit-standards", "security-review"],
 });
