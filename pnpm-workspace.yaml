@@ -1,6 +1,5 @@
 packages:
   - 'docs'
-  - 'packages/*'
 
 catalog:
   '@astrojs/starlight': ^0.41.7
