@@ -36,27 +36,38 @@ feat!: remove deprecated auth endpoint
 BREAKING CHANGE: the /v1/auth endpoint has been removed; use /v2/auth
 ```
 
-## Gitmoji
+## Devmoji — always add the emoji
 
-Prefix commit descriptions with the appropriate emoji so intent is visible at a glance in git log. Place the emoji after the colon so the type is still the first token (semantic-release and commitlint parse from the start of the subject):
+All commits use [devmoji](https://github.com/folke/devmoji). The emoji goes **inside the subject, after `type(scope): `** and before the description. The `prepare-commit-msg` hook adds it automatically on `git commit`, but always include it explicitly in `-m` strings:
 
 ```
 feat: ✨ add OAuth2 login flow
 fix: 🐛 handle null session on logout
-docs: 📝 update deploy prerequisites
+docs: 📚 update deploy prerequisites
+chore: 🔧 update dependencies
+ci: 👷 cache pnpm store
+test: 🚨 add coverage for edge case
+refactor: ♻️ extract helper function
+perf: ⚡ reduce bundle size
+build: 📦 migrate to tsdown
+chore(release): 🚀 1.2.0
 ```
 
 | Type | Emoji |
 |------|-------|
 | `feat` | ✨ |
 | `fix` | 🐛 |
-| `docs` | 📝 |
+| `docs` | 📚 |
 | `chore` | 🔧 |
+| `chore(release)` | 🚀 |
+| `chore(deps)` | 🔗 |
 | `ci` | 👷 |
 | `refactor` | ♻️ |
-| `test` | 🧪 |
-| `perf` | ⚡️ |
-| `style` | 💄 |
+| `test` | 🚨 |
+| `perf` | ⚡ |
+| `build` | 📦 |
+| `style` | 🎨 |
+| `security` | 🔒 |
 | `revert` | ⏪ |
 
 ## DCO — always `git commit -s`
