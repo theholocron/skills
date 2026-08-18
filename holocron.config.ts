@@ -5,7 +5,7 @@ export default defineConfig({
 	homepage: "https://docs.theholocron.dev/skills/",
 	repo: {
 		teams: [{ slug: "gatekeepers", permission: "maintain" }],
-		protection: "balanced",
+		protection: "strict",
 		topics: ["agent", "claude", "codex", "developer-tools", "skills"],
 		properties: {
 			lifecycle: "active",
