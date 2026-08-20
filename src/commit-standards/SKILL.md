@@ -1,5 +1,6 @@
 ---
 name: commit-standards
+title: Commit Standards
 description: Commit message standards. INVOKE WHEN: writing a commit message, reviewing a commit, opening a PR. Always use Conventional Commits and sign commits with -s (DCO).
 ---
 

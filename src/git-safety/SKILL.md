@@ -1,5 +1,6 @@
 ---
 name: git-safety
+title: Git Safety
 description: Git safety rules. INVOKE WHEN: git push, force push, git reset, git clean, destructive git operations. NEVER force push or do destructive git operations without explicit permission.
 ---
 

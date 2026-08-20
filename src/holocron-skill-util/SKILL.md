@@ -1,5 +1,6 @@
 ---
 name: holocron-skill-util
+title: "Holocron: New Util"
 description: Scaffold a new @theholocron/<slug>-utils package in theholocron/utils. INVOKE WHEN: user asks to add a new utility package to the utils monorepo. Invoked as /holocron-skill-util.
 ---
 
