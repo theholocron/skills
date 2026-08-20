@@ -1,5 +1,6 @@
 ---
 name: holocron-skill-config
+title: "Holocron: New Config"
 description: Scaffold a new shareable config package in theholocron/configs. INVOKE WHEN: user asks to add a new @theholocron/<tool>-config package to the configs monorepo. Invoked as /holocron-skill-config.
 ---
 

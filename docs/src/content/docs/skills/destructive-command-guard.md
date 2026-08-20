@@ -1,16 +1,18 @@
 ---
-name: destructive-command-guard
-description: Destructive command safety rules. INVOKE WHEN: about to run any Bash command that deletes, resets, drops, prunes, or truncates. Pairs with the dcg PreToolUse hook (https://github.com/Dicklesworthstone/destructive_command_guard).
+title: destructive-command-guard
+description: Guard rails for destructive shell, git, database, and infrastructure commands.
 ---
 
-# destructive-command-guard
+Prevents irreversible damage from commands that delete, reset, drop, prune, or truncate. Pairs with the [`dcg` PreToolUse hook](https://github.com/Dicklesworthstone/destructive_command_guard).
 
-These rules mirror what the `dcg` PreToolUse hook enforces at runtime. Follow them proactively so the hook is a safety net, not the first line of defense.
+**Invoke as:** `/destructive-command-guard`
+
+**Trigger:** about to run any Bash command that deletes, resets, drops, prunes, or truncates.
 
 ## Git — never run without explicit permission
 
 | Blocked | Safer alternative |
-|---------|------------------|
+| --- | --- |
 | `git reset --hard` | `git stash` first, then reset |
 | `git clean -f` / `git clean -fd` | `git clean -n` (dry run) first |
 | `git checkout -- .` / `git restore .` | Restore individual files only |
@@ -21,7 +23,7 @@ These rules mirror what the `dcg` PreToolUse hook enforces at runtime. Follow th
 ## Filesystem — never run without explicit permission
 
 | Blocked | Safer alternative |
-|---------|------------------|
+| --- | --- |
 | `rm -rf <dir>` | `trash <dir>` or move to `/tmp/` |
 | `find ... -delete` | `find ... -print` first to verify |
 | `chmod -R 777` | Scope to specific files only |
@@ -31,7 +33,7 @@ These rules mirror what the `dcg` PreToolUse hook enforces at runtime. Follow th
 ## Database — never run without explicit permission
 
 | Blocked | Safer alternative |
-|---------|------------------|
+| --- | --- |
 | `DROP TABLE` / `DROP DATABASE` | Rename table first; drop after confirming |
 | `TRUNCATE` | `DELETE WHERE ...` with a `WHERE` clause |
 | `DELETE` without `WHERE` | Always require a `WHERE` clause |
@@ -39,7 +41,7 @@ These rules mirror what the `dcg` PreToolUse hook enforces at runtime. Follow th
 ## Containers / infrastructure
 
 | Blocked | Safer alternative |
-|---------|------------------|
+| --- | --- |
 | `docker system prune` | `docker container prune` (scope it) |
 | `kubectl delete namespace` | Confirm namespace + context explicitly |
 | `terraform destroy` | Require `--target` to scope the destroy |
@@ -47,4 +49,4 @@ These rules mirror what the `dcg` PreToolUse hook enforces at runtime. Follow th
 
 ## Rule of thumb
 
-If a command is irreversible and affects more than one file or row, **stop and ask** before running it. The user's confirmation costs seconds; accidental deletion costs hours.
+If a command is irreversible and affects more than one file or row, **stop and ask** before running it.

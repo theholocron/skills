@@ -1,5 +1,6 @@
 ---
 name: security-review
+title: Security Review
 description: Security review checklist. INVOKE WHEN: reviewing code for security issues, auditing a PR, checking for vulnerabilities. Check for OWASP top 10 and common Node.js/TypeScript security pitfalls.
 ---
 

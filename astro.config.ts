@@ -12,6 +12,7 @@ export default defineConfig({
 				label: "Skills",
 				items: [
 					{ label: "commit-standards", slug: "skills/commit-standards" },
+					{ label: "destructive-command-guard", slug: "skills/destructive-command-guard" },
 					{ label: "git-safety", slug: "skills/git-safety" },
 					{ label: "holocron-skill-client", slug: "skills/holocron-skill-client" },
 					{ label: "holocron-skill-config", slug: "skills/holocron-skill-config" },

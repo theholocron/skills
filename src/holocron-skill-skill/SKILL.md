@@ -1,5 +1,6 @@
 ---
 name: holocron-skill-skill
+title: "Holocron: New Skill"
 description: Add a new owned skill to theholocron/skills. INVOKE WHEN: user asks to create or add a new skill to the skills repo. Invoked as /holocron-skill-skill.
 ---
 

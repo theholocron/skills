@@ -1,5 +1,6 @@
 ---
 name: pr-workflow
+title: PR Workflow
 description: Pull request workflow rules. INVOKE WHEN: opening a PR, merging, closing a PR, creating a branch. Always open a PR — never push directly to the default branch.
 ---
 
