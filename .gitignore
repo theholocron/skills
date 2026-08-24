@@ -4,7 +4,6 @@ CHANGELOG.md
 
 # managed by holocron setup — skills
 /.agents/skills/
-/.claude/skills/turborepo
 /.claude/skills/git-safety
 /.claude/skills/pr-workflow
 /.claude/skills/commit-standards
