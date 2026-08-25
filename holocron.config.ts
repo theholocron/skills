@@ -22,6 +22,7 @@ export default defineConfig({
 		"greetings",
 		"dependencies",
 		"bookkeeping",
+		"sync",
 		{ name: "deploy", with: { docs: true } },
 	],
 	providers: {
