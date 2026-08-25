@@ -80,8 +80,8 @@ importers:
         specifier: catalog:configs
         version: 7.23.1(@commitlint/cli@21.2.2(@types/node@26.2.0)(conventional-commits-parser@7.1.2)(typescript@5.9.3))(@commitlint/config-conventional@21.2.2)
       '@theholocron/components-doc':
-        specifier: ^1.2.0
-        version: 1.2.0(@astrojs/starlight@0.41.7(astro@7.2.4(@emnapi/core@2.0.0-alpha.3)(@emnapi/runtime@2.0.0-alpha.3)(@types/node@26.2.0)(jiti@2.6.1)(tsx@4.23.12))(typescript@5.9.3))(astro@7.2.4(@emnapi/core@2.0.0-alpha.3)(@emnapi/runtime@2.0.0-alpha.3)(@types/node@26.2.0)(jiti@2.6.1)(tsx@4.23.12))(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
+        specifier: ^1.6.0
+        version: 1.6.0(@astrojs/starlight@0.41.7(astro@7.2.4(@emnapi/core@2.0.0-alpha.3)(@emnapi/runtime@2.0.0-alpha.3)(@types/node@26.2.0)(jiti@2.6.1)(tsx@4.23.12))(typescript@5.9.3))(astro@7.2.4(@emnapi/core@2.0.0-alpha.3)(@emnapi/runtime@2.0.0-alpha.3)(@types/node@26.2.0)(jiti@2.6.1)(tsx@4.23.12))(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       '@theholocron/docs-theme':
         specifier: 'catalog:'
         version: 1.6.0(@astrojs/starlight@0.41.7(astro@7.2.4(@emnapi/core@2.0.0-alpha.3)(@emnapi/runtime@2.0.0-alpha.3)(@types/node@26.2.0)(jiti@2.6.1)(tsx@4.23.12))(typescript@5.9.3))(astro@7.2.4(@emnapi/core@2.0.0-alpha.3)(@emnapi/runtime@2.0.0-alpha.3)(@types/node@26.2.0)(jiti@2.6.1)(tsx@4.23.12))
@@ -92,8 +92,8 @@ importers:
         specifier: catalog:configs
         version: 7.23.1(prettier@3.9.6)
       '@theholocron/registry-doc':
-        specifier: ^1.2.0
-        version: 1.2.0
+        specifier: ^1.6.0
+        version: 1.6.0
       '@theholocron/semantic-release-config':
         specifier: catalog:configs
         version: 7.23.1(@semantic-release/changelog@6.0.3(semantic-release@25.0.9(typescript@5.9.3)))(@semantic-release/commit-analyzer@13.0.1(semantic-release@25.0.9(typescript@5.9.3)))(@semantic-release/exec@7.1.0(semantic-release@25.0.9(typescript@5.9.3)))(@semantic-release/git@10.0.1(semantic-release@25.0.9(typescript@5.9.3)))(@semantic-release/github@12.0.9(semantic-release@25.0.9(typescript@5.9.3)))(@semantic-release/release-notes-generator@14.1.1(semantic-release@25.0.9(typescript@5.9.3)))(conventional-changelog-conventionalcommits@10.4.0)(semantic-release@25.0.9(typescript@5.9.3))
@@ -1547,8 +1547,8 @@ packages:
       '@commitlint/cli': ^21
       '@commitlint/config-conventional': ^21
 
-  '@theholocron/components-doc@1.2.0':
-    resolution: {integrity: sha512-PSP0cSTJE6ymkyQVcyY0m/e8oZRL/cxsI3H82QGHRyRdWL69oQBP9xwV4SZeGEvQaTt+/j8faK/9ua+rwEQlVQ==}
+  '@theholocron/components-doc@1.6.0':
+    resolution: {integrity: sha512-0wdLXKgnJytsSDFRcMEpD77C032/PcH2CEq3oEwBBjMcOWODALCca+3RaxzpaNgymZHIipqOG/XUeEeTpQbn0A==}
     engines: {node: '>=22.0.0'}
     peerDependencies:
       '@astrojs/react': '>=3.0.0'
@@ -1596,8 +1596,8 @@ packages:
     peerDependencies:
       prettier: ^3
 
-  '@theholocron/registry-doc@1.2.0':
-    resolution: {integrity: sha512-5fomR2eo99R5htv1MzLJEZkbL1uixf9BcFCCEQ4k87WAoBxAvAh/+RRZ0rVchAjah9dYNquC/AvTzmOreV4OjA==}
+  '@theholocron/registry-doc@1.6.0':
+    resolution: {integrity: sha512-MONKRhpuWE4gdLQxIijU014MFTmgZFBu7+TtgxhbqLxxfJOrsr9HyztSVck/l9D+dWbQ0/V0OijzO1uo6slKqw==}
     engines: {node: '>=22.0.0'}
 
   '@theholocron/semantic-release-config@7.23.1':
@@ -5725,7 +5725,7 @@ snapshots:
       '@commitlint/cli': 21.2.2(@types/node@26.2.0)(conventional-commits-parser@7.1.2)(typescript@5.9.3)
       '@commitlint/config-conventional': 21.2.2
 
-  '@theholocron/components-doc@1.2.0(@astrojs/starlight@0.41.7(astro@7.2.4(@emnapi/core@2.0.0-alpha.3)(@emnapi/runtime@2.0.0-alpha.3)(@types/node@26.2.0)(jiti@2.6.1)(tsx@4.23.12))(typescript@5.9.3))(astro@7.2.4(@emnapi/core@2.0.0-alpha.3)(@emnapi/runtime@2.0.0-alpha.3)(@types/node@26.2.0)(jiti@2.6.1)(tsx@4.23.12))(react-dom@19.2.8(react@19.2.8))(react@19.2.8)':
+  '@theholocron/components-doc@1.6.0(@astrojs/starlight@0.41.7(astro@7.2.4(@emnapi/core@2.0.0-alpha.3)(@emnapi/runtime@2.0.0-alpha.3)(@types/node@26.2.0)(jiti@2.6.1)(tsx@4.23.12))(typescript@5.9.3))(astro@7.2.4(@emnapi/core@2.0.0-alpha.3)(@emnapi/runtime@2.0.0-alpha.3)(@types/node@26.2.0)(jiti@2.6.1)(tsx@4.23.12))(react-dom@19.2.8(react@19.2.8))(react@19.2.8)':
     dependencies:
       '@astrojs/starlight': 0.41.7(astro@7.2.4(@emnapi/core@2.0.0-alpha.3)(@emnapi/runtime@2.0.0-alpha.3)(@types/node@26.2.0)(jiti@2.6.1)(tsx@4.23.12))(typescript@5.9.3)
       '@codesandbox/sandpack-react': 2.20.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
@@ -5762,7 +5762,7 @@ snapshots:
     dependencies:
       prettier: 3.9.6
 
-  '@theholocron/registry-doc@1.2.0': {}
+  '@theholocron/registry-doc@1.6.0': {}
 
   '@theholocron/semantic-release-config@7.23.1(@semantic-release/changelog@6.0.3(semantic-release@25.0.9(typescript@5.9.3)))(@semantic-release/commit-analyzer@13.0.1(semantic-release@25.0.9(typescript@5.9.3)))(@semantic-release/exec@7.1.0(semantic-release@25.0.9(typescript@5.9.3)))(@semantic-release/git@10.0.1(semantic-release@25.0.9(typescript@5.9.3)))(@semantic-release/github@12.0.9(semantic-release@25.0.9(typescript@5.9.3)))(@semantic-release/release-notes-generator@14.1.1(semantic-release@25.0.9(typescript@5.9.3)))(conventional-changelog-conventionalcommits@10.4.0)(semantic-release@25.0.9(typescript@5.9.3))':
     dependencies:
