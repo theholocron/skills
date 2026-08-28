@@ -1,33 +1,30 @@
 import { defineConfig } from "@theholocron/cli";
+import { nodeDocs } from "@theholocron/holocron-config";
 
+const { repo, workflows, providers, org, domain, docs } = nodeDocs();
 export default defineConfig({
 	description: "Shared agent skill registry.",
 	homepage: "https://docs.theholocron.dev/skills/",
+	org,
+	domain,
+	docs,
 	repo: {
 		teams: [{ slug: "gatekeepers", permission: "maintain" }],
-		protection: "strict",
 		topics: ["agent", "claude", "codex", "developer-tools", "skills"],
+		...repo,
+		requiredChecks: [...repo.requiredChecks],
 		properties: {
-			lifecycle: "active",
-			open_source: true,
+			...repo.properties,
 			runtime_environment: "none",
 			uses_external_packages: false,
 		},
 	},
 	workflows: [
-		"test",
-		"release",
-		"review",
-		"stale",
-		"greetings",
-		"dependencies",
-		"bookkeeping",
+		...workflows,
+		{ name: "release", with: { "run-build": false } },
 		"sync",
-		{ name: "deploy", with: { docs: true } },
 	],
-	providers: {
-		source: "github",
-	},
+	providers: { ...providers, secrets: "github" },
 	agent: "claude",
 	skills: ["git-safety", "pr-workflow", "commit-standards", "security-review"],
 });
