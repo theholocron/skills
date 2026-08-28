@@ -3,6 +3,9 @@ import { defineConfig } from "@theholocron/cli";
 export default defineConfig({
 	description: "Shared agent skill registry.",
 	homepage: "https://docs.theholocron.dev/skills/",
+	org: "theholocron",
+	domain: "theholocron.dev",
+	docs: { build: "workflow", https: true },
 	repo: {
 		teams: [{ slug: "gatekeepers", permission: "maintain" }],
 		protection: "strict",
@@ -23,10 +26,12 @@ export default defineConfig({
 		"dependencies",
 		"bookkeeping",
 		"sync",
-		{ name: "deploy", with: { docs: true, preview: { project: "theholocron-preview", domain: "preview.theholocron.dev" } } },
+		{ name: "deploy", with: { docs: true, preview: true } },
 	],
 	providers: {
 		source: "github",
+		deployment: "cloudflare",
+		dns: "cloudflare",
 	},
 	agent: "claude",
 	skills: ["git-safety", "pr-workflow", "commit-standards", "security-review"],
