@@ -23,7 +23,7 @@ export default defineConfig({
 		"dependencies",
 		"bookkeeping",
 		"sync",
-		{ name: "deploy", with: { docs: true } },
+		{ name: "deploy", with: { docs: true, preview: { project: "theholocron-preview", domain: "preview.theholocron.dev" } } },
 	],
 	providers: {
 		source: "github",
