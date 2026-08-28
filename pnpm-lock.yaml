@@ -35,6 +35,9 @@ catalogs:
     '@theholocron/cli':
       specifier: ^3.24.4
       version: 3.29.12
+    '@theholocron/holocron-config':
+      specifier: ^7.26.0
+      version: 7.26.0
     '@theholocron/holocron-plugin-github':
       specifier: ^3.24.4
       version: 3.29.12
@@ -88,6 +91,9 @@ importers:
       '@theholocron/docs-theme':
         specifier: 'catalog:'
         version: 1.6.0(@astrojs/starlight@0.41.7(astro@7.2.4(@emnapi/core@2.0.0-alpha.3)(@emnapi/runtime@2.0.0-alpha.3)(@types/node@26.2.0)(jiti@2.6.1)(tsx@4.23.12))(typescript@5.9.3))(astro@7.2.4(@emnapi/core@2.0.0-alpha.3)(@emnapi/runtime@2.0.0-alpha.3)(@types/node@26.2.0)(jiti@2.6.1)(tsx@4.23.12))
+      '@theholocron/holocron-config':
+        specifier: catalog:holocron
+        version: 7.26.0(@theholocron/cli@3.29.12(@opentelemetry/core@2.10.0(@opentelemetry/api@1.9.1))(@types/node@26.2.0))
       '@theholocron/holocron-plugin-github':
         specifier: catalog:holocron
         version: 3.29.12(@theholocron/cli@3.29.12(@opentelemetry/core@2.10.0(@opentelemetry/api@1.9.1))(@types/node@26.2.0))(@theholocron/github-client@1.10.4)
@@ -1985,6 +1991,12 @@ packages:
   '@theholocron/github-client@1.10.4':
     resolution: {integrity: sha512-Svf7o2kc2miW+z6YrcsJkKwSdRt9XvH8PaNxiE5zm5Pn1ybuckqIJ1qY7OOgvndh1lfpEjeU9uhvBjDKSvJdyQ==}
     engines: {node: '>=22.0.0'}
+
+  '@theholocron/holocron-config@7.26.0':
+    resolution: {integrity: sha512-nGYZ9aIvvTcEG37iGvOZ9tagQOvaETD/KAuoP/d1SRSOAjnnk3mGzgLyMzmpy9fNH02CzcAVMFIdOzh6InE/IA==}
+    engines: {node: '>=22.0.0'}
+    peerDependencies:
+      '@theholocron/cli': '>=2.0.0-alpha.1'
 
   '@theholocron/holocron-plugin-github@3.29.12':
     resolution: {integrity: sha512-6Yy3KXLBbbpzBaIQCXHjjTMbKAImixvRT4HNv+Jm5MvobVqx9ejq1TEpZrUkT+TiOCMLuvdmSgkwJehmpZxhBw==}
@@ -6644,6 +6656,10 @@ snapshots:
       '@theholocron/http-client': 1.10.4
     transitivePeerDependencies:
       - vitest
+
+  '@theholocron/holocron-config@7.26.0(@theholocron/cli@3.29.12(@opentelemetry/core@2.10.0(@opentelemetry/api@1.9.1))(@types/node@26.2.0))':
+    dependencies:
+      '@theholocron/cli': 3.29.12(@opentelemetry/core@2.10.0(@opentelemetry/api@1.9.1))(@types/node@26.2.0)
 
   '@theholocron/holocron-plugin-github@3.29.12(@theholocron/cli@3.29.12(@opentelemetry/core@2.10.0(@opentelemetry/api@1.9.1))(@types/node@26.2.0))(@theholocron/github-client@1.10.4)':
     dependencies:
