@@ -19,11 +19,7 @@ export default defineConfig({
 			uses_external_packages: false,
 		},
 	},
-	workflows: [
-		...workflows,
-		{ name: "release", with: { "run-build": false } },
-		"sync",
-	],
+	workflows: [...workflows, { name: "release", with: { "run-build": false } }, "sync"],
 	providers: { ...providers, secrets: "github" },
 	agent: "claude",
 	skills: ["git-safety", "pr-workflow", "commit-standards", "security-review"],
