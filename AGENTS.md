@@ -17,6 +17,7 @@ format. Skills are installed into consuming repos by `holocron setup` based on t
 ## Adding a new skill
 
 1. Create `skills/<name>/SKILL.md` with the frontmatter format:
+
    ```markdown
    ---
    name: <name>
@@ -27,6 +28,7 @@ format. Skills are installed into consuming repos by `holocron setup` based on t
 
    …
    ```
+
 2. Verify `pnpm test` passes — the smoke test checks that every skill dir has a `SKILL.md`.
 3. Update `README.md` with a row in the available skills table.
 4. Open a PR with a `feat:` commit — semantic-release handles versioning.
