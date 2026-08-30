@@ -2,22 +2,22 @@
 # Source:  theholocron/holocron · packages/cli/src/commands/setup-workflows.ts
 # Tool:    holocron sync-github
 # Changes: edit source in theholocron/holocron and push to alpha or main.
-name: Review
+name: Typecheck
 
 on: # yamllint disable-line rule:truthy
+  push:
+    branches: [main, alpha]
   pull_request:
 
 concurrency:
-  group: review-${{ github.ref }}
+  group: typecheck-${{ github.ref }}
   cancel-in-progress: true
 
 permissions:
   contents: read
-  checks: write
-  pull-requests: write
 
 jobs:
-  review:
-    name: Review
-    uses: theholocron/.github/.github/workflows/review.yml@main
+  typecheck:
+    name: Typecheck
+    uses: theholocron/.github/.github/workflows/typecheck.yml@main
     secrets: inherit
