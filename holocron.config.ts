@@ -20,7 +20,7 @@ export default defineConfig({
 		},
 	},
 	workflows: [
-		...workflows,
+		...workflows.filter((w) => (typeof w === "string" ? w : w.name) !== "typecheck"),
 		{ name: "release", with: { "run-build": false } },
 		"sync",
 	],
