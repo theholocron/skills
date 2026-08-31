@@ -14,7 +14,7 @@ Review the implementation against:
 4. The implementation plan
 5. Repository conventions
 
-Do not assume the implementation is correct simply because tests pass.
+Do not assume the implementation is correct because tests pass.
 
 Evaluate:
 
