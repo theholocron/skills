@@ -42,6 +42,7 @@ jobs:
     uses: theholocron/.github/.github/workflows/deploy.yml@main
     with:
       type: docs
+      name: skills
     secrets: inherit
 
   preview:
@@ -50,6 +51,7 @@ jobs:
     uses: theholocron/.github/.github/workflows/deploy-preview.yml@main
     with:
       type: docs
+      name: skills
       cloudflare-project: theholocron-preview
     secrets: inherit
 
