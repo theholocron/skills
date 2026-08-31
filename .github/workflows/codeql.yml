@@ -2,22 +2,24 @@
 # Source:  theholocron/holocron · packages/cli/src/commands/setup-workflows.ts
 # Tool:    holocron sync-github
 # Changes: edit source in theholocron/holocron and push to alpha or main.
-name: Review
+name: CodeQL
 
 on: # yamllint disable-line rule:truthy
+  push:
+    branches:
+      - main
   pull_request:
-
-concurrency:
-  group: review-${{ github.ref }}
-  cancel-in-progress: true
+    branches:
+      - main
+  schedule:
+    - cron: "0 0 * * 1"
 
 permissions:
+  actions: read
   contents: read
-  checks: write
-  pull-requests: write
+  security-events: write
 
 jobs:
-  review:
-    name: Review
-    uses: theholocron/.github/.github/workflows/review.yml@main
+  codeql:
+    uses: theholocron/.github/.github/workflows/codeql.yml@main
     secrets: inherit

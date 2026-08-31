@@ -17,14 +17,18 @@ format. Skills are installed into consuming repos by `holocron setup` based on t
 ## Adding a new skill
 
 1. Create `skills/<name>/SKILL.md` with the frontmatter format:
+
    ```markdown
    ---
    name: <name>
    description: One-line description. INVOKE WHEN: <trigger conditions>.
    ---
+
    # skill title
+
    …
    ```
+
 2. Verify `pnpm test` passes — the smoke test checks that every skill dir has a `SKILL.md`.
 3. Update `README.md` with a row in the available skills table.
 4. Open a PR with a `feat:` commit — semantic-release handles versioning.
@@ -33,22 +37,22 @@ format. Skills are installed into consuming repos by `holocron setup` based on t
 
 ### Workflow & safety
 
-| Skill | Trigger |
-|-------|---------|
-| `git-safety` | git push, force push, destructive git ops |
-| `pr-workflow` | opening a PR, merging, branch management |
-| `commit-standards` | writing a commit message |
-| `security-review` | reviewing code for security issues |
+| Skill              | Trigger                                   |
+| ------------------ | ----------------------------------------- |
+| `git-safety`       | git push, force push, destructive git ops |
+| `pr-workflow`      | opening a PR, merging, branch management  |
+| `commit-standards` | writing a commit message                  |
+| `security-review`  | reviewing code for security issues        |
 
 ### Project-specific (theholocron)
 
-| Skill | Trigger |
-|-------|---------|
-| `holocron-skill-config` | scaffolding a new `@theholocron/*-config` package |
-| `holocron-skill-client` | scaffolding a new `@theholocron/*-client` package |
+| Skill                   | Trigger                                                    |
+| ----------------------- | ---------------------------------------------------------- |
+| `holocron-skill-config` | scaffolding a new `@theholocron/*-config` package          |
+| `holocron-skill-client` | scaffolding a new `@theholocron/*-client` package          |
 | `holocron-skill-plugin` | scaffolding or migrating a new `holocron-plugin-*` package |
-| `holocron-skill-util` | scaffolding a new `@theholocron/*-utils` package |
-| `holocron-skill-skill` | adding a new skill to the skills repo |
+| `holocron-skill-util`   | scaffolding a new `@theholocron/*-utils` package           |
+| `holocron-skill-skill`  | adding a new skill to the skills repo                      |
 
 ## Quality
 
