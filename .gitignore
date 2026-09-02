@@ -15,3 +15,4 @@ docs/dist/
 # managed by holocron setup — prompts
 /.agents/prompts/
 # end managed by holocron setup — prompts
+super-linter-output/
