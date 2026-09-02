@@ -17,7 +17,7 @@ pnpm install @theholocron/skills
 ## Usage
 
 ```typescript
-import {} from "@theholocron/skills";
+import { } from "@theholocron/skills";
 ```
 
 <!-- /holocron:installation -->
