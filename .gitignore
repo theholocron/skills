@@ -11,3 +11,8 @@ CHANGELOG.md
 # end managed by holocron setup — skills
 docs/.astro/
 docs/dist/
+
+# managed by holocron setup — prompts
+/.agents/prompts/
+# end managed by holocron setup — prompts
+super-linter-output/
