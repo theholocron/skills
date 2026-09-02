@@ -16,7 +16,7 @@ catalogs:
     '@theholocron/semantic-release-config': ^7.24.1
     '@theholocron/tsconfig': ^7.24.1
   holocron:
-    '@theholocron/cli': ^3.37.1
+    '@theholocron/cli': ^3.45.1
     '@theholocron/holocron-config': ^7.31.0
     '@theholocron/holocron-plugin-cloudflare': ^3.46.0
     '@theholocron/holocron-plugin-fern': ^3.46.0
