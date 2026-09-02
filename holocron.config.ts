@@ -1,7 +1,7 @@
 import { defineConfig } from "@theholocron/cli";
-import { nodeDocsSite } from "@theholocron/holocron-config";
+import { compose, nodeDocsSite, wikiCapability as wiki } from "@theholocron/holocron-config";
 
-const preset = nodeDocsSite();
+const preset = compose(nodeDocsSite(), wiki());
 export default defineConfig({
 	...preset,
 	description: "Shared agent skill registry.",

@@ -17,7 +17,7 @@ catalogs:
     '@theholocron/tsconfig': ^7.24.1
   holocron:
     '@theholocron/cli': ^3.37.1
-    '@theholocron/holocron-config': ^7.28.0
+    '@theholocron/holocron-config': ^7.31.0
     '@theholocron/holocron-plugin-github': ^3.37.1
 
 # Force a single TypeScript version across the graph so cosmiconfig doesn't
