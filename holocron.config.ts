@@ -16,11 +16,7 @@ export default defineConfig({
 			uses_external_packages: false,
 		},
 	},
-	workflows: [
-		...preset.workflows,
-		{ name: "release", with: { "run-build": false } },
-		"sync",
-	],
+	workflows: [...preset.workflows, { name: "release", with: { "run-build": false } }, "sync"],
 	providers: { ...preset.providers, secrets: "github" },
 	agent: "claude",
 	skills: ["git-safety", "pr-workflow", "commit-standards", "security-review"],
