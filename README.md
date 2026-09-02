@@ -108,6 +108,7 @@ Add both to `.gitignore`:
 ### Adding an owned skill
 
 1. Create `skills/<name>/SKILL.md` with the frontmatter format:
+
    ```markdown
    ---
    name: <name>
@@ -118,6 +119,7 @@ Add both to `.gitignore`:
 
    …
    ```
+
 2. Run `pnpm test` — the smoke test checks that every skill dir has a `SKILL.md`.
 3. Update this README with a row in the owned skills table.
 4. Open a PR with a `feat:` commit — semantic-release handles versioning.
