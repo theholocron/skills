@@ -17,7 +17,11 @@ export default defineConfig({
 		},
 	},
 	workflows: [...preset.workflows, { name: "release", with: { "run-build": false } }, "sync"],
-	providers: { ...preset.providers, secrets: "github", wiki: ["fern", { domain: "wiki.theholocron.dev", fernOrg: "holocron", icon: "fa-duotone fa-bolt" }] },
+	providers: {
+		...preset.providers,
+		secrets: "github",
+		wiki: ["fern", { domain: "wiki.theholocron.dev", fernOrg: "holocron", icon: "fa-duotone fa-bolt" }],
+	},
 	agent: "claude",
 	skills: ["git-safety", "pr-workflow", "commit-standards", "security-review"],
 });
