@@ -16,11 +16,11 @@ catalogs:
     '@theholocron/semantic-release-config': ^7.24.1
     '@theholocron/tsconfig': ^7.24.1
   holocron:
-    '@theholocron/cli': ^3.45.1
+    '@theholocron/cli': ^3.48.0
     '@theholocron/holocron-config': ^7.31.0
     '@theholocron/holocron-plugin-cloudflare': ^3.46.0
     '@theholocron/holocron-plugin-fern': ^3.46.0
-    '@theholocron/holocron-plugin-github': ^3.37.1
+    '@theholocron/holocron-plugin-github': ^3.48.0
 
 # Force a single TypeScript version across the graph so cosmiconfig doesn't
 # pick up a transitive TypeScript 7 when loading .ts config files.
