@@ -16,3 +16,4 @@ docs/dist/
 /.agents/prompts/
 # end managed by holocron setup — prompts
 super-linter-output/
+test-report.junit.xml
