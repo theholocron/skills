@@ -11,6 +11,9 @@ CHANGELOG.md
 # end managed by holocron setup — skills
 docs/.astro/
 docs/dist/
+# astro project lives at the repo root here, not docs/
+/.astro/
+/dist/
 
 # managed by holocron setup — prompts
 /.agents/prompts/
