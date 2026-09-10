@@ -51,6 +51,7 @@
     "@theholocron/tsconfig": "catalog:configs",
     "astro": "catalog:",
     "conventional-changelog-conventionalcommits": "^10.2.1",
+    "husky": "^9.1.7",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
     "semantic-release": "^25.0.9",

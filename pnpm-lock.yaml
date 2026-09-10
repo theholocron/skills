@@ -127,6 +127,9 @@ importers:
       conventional-changelog-conventionalcommits:
         specifier: 9.3.1
         version: 9.3.1
+      husky:
+        specifier: ^9.1.7
+        version: 9.1.7
       react:
         specifier: ^19.2.8
         version: 19.2.8
@@ -1897,15 +1900,6 @@ packages:
       '@theholocron/cli': 4.16.2
       '@theholocron/github-client': ^1.14.2
 
-  '@theholocron/http-client@1.14.1':
-    resolution: {integrity: sha512-erCNTOno+ANNnxxu/16rOj/rdm27akqWrD2sy31+d6JAMwaYUVjyETv5HqDnih2kcln12Sus8K3P9Cffq6siMA==}
-    engines: {node: '>=22.0.0'}
-    peerDependencies:
-      vitest: '>=4.0.0'
-    peerDependenciesMeta:
-      vitest:
-        optional: true
-
   '@theholocron/http-client@1.15.1':
     resolution: {integrity: sha512-hmd/ZZiMV2pM2grO6dQXn1KuK3q+mFLMBRZHwtM0Xxz6cXRPdgP8HxJtj4Jm0kjQyPR8K+imjwk1NV9hFImoxw==}
     engines: {node: '>=22.0.0'}
@@ -2954,6 +2948,11 @@ packages:
   human-signals@8.0.1:
     resolution: {integrity: sha512-eKCa6bwnJhvxj14kZk5NCPc6Hb6BdsU9DZcOnmQKSnO1VKrfV0zCvtttPZUsBvjmNDn8rpcJfpwSYnHBjc95MQ==}
     engines: {node: '>=18.18.0'}
+
+  husky@9.1.7:
+    resolution: {integrity: sha512-5gs5ytaNjBrh5Ow3zrvdUUY+0VxIuWVL4i9irt6friV+BqdCfmV11CQTWMiBYWHbXhco+J1kHfTOUkePhCDvMA==}
+    engines: {node: '>=18'}
+    hasBin: true
 
   i18next@26.4.1:
     resolution: {integrity: sha512-9YbX5E6gd1H+yaOSX3izCsPj5iWXyH7X4oC+iuHHJJw8AeHglzOK5SJf+1CHxaYKYigcea+8jvzSxqYx46YvyA==}
@@ -6582,7 +6581,7 @@ snapshots:
 
   '@theholocron/cloudflare-client@1.13.0':
     dependencies:
-      '@theholocron/http-client': 1.14.1
+      '@theholocron/http-client': 1.15.1
     transitivePeerDependencies:
       - vitest
 
@@ -6643,8 +6642,6 @@ snapshots:
       '@theholocron/cli': 4.16.2(@astrojs/react@6.0.4(@types/node@26.2.0)(@types/react-dom@19.2.5(@types/react@19.2.18))(@types/react@19.2.18)(esbuild@0.28.2)(jiti@2.6.1)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(tsx@4.23.12))(@astrojs/starlight@0.41.11(@astrojs/markdown-remark@7.2.4)(astro@7.2.9(@astrojs/markdown-remark@7.2.4)(@emnapi/core@2.0.0-alpha.3)(@emnapi/runtime@2.0.0-alpha.3)(@types/node@26.2.0)(jiti@2.6.1)(tsx@4.23.12))(typescript@5.9.3))(@opentelemetry/core@2.10.0(@opentelemetry/api@1.9.1))(@types/node@26.2.0)(astro@7.2.9(@astrojs/markdown-remark@7.2.4)(@emnapi/core@2.0.0-alpha.3)(@emnapi/runtime@2.0.0-alpha.3)(@types/node@26.2.0)(jiti@2.6.1)(tsx@4.23.12))(dotenv@16.6.1)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       '@theholocron/github-client': 1.15.0
       libsodium-wrappers: 0.8.4
-
-  '@theholocron/http-client@1.14.1': {}
 
   '@theholocron/http-client@1.15.1': {}
 
@@ -7894,6 +7891,8 @@ snapshots:
   human-signals@5.0.0: {}
 
   human-signals@8.0.1: {}
+
+  husky@9.1.7: {}
 
   i18next@26.4.1(typescript@5.9.3):
     optionalDependencies:
