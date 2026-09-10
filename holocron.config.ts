@@ -11,12 +11,12 @@ export default defineConfig({
 		teams: [{ slug: "gatekeepers", permission: "maintain" }],
 		topics: ["agent", "claude", "codex", "developer-tools", "skills"],
 		properties: {
-			...preset.repo.properties,
+			...preset.repo?.properties,
 			runtime_environment: "none",
 			uses_external_packages: false,
 		},
 	},
-	workflows: [...preset.workflows, { name: "release", with: { "run-build": false } }, "sync"],
+	tasks: [...preset.tasks, { name: "release", with: { "run-build": false } }, "sync"],
 	providers: {
 		...preset.providers,
 		secrets: "github",
