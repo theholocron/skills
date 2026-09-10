@@ -7,8 +7,10 @@ coverage:
     project:
       default:
         target: auto
+        if_not_found: success
         threshold: 1%
     patch:
       default:
         target: auto
+        if_not_found: success
         threshold: 1%
