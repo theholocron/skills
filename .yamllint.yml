@@ -1,10 +1,7 @@
 ---
 extends: default
 
-ignore: |
-  node_modules/
-  dist/
-  pnpm-lock.yaml
+ignore-from-file: .gitignore
 
 rules:
   comments:
