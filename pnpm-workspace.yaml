@@ -1,26 +1,26 @@
 packages:
-  - 'docs'
+  - "docs"
 
 catalog:
-  '@astrojs/starlight': ^0.41.7
-  '@theholocron/docs-theme': ^1.10.1
+  "@astrojs/starlight": ^0.41.7
+  "@theholocron/docs-theme": ^1.10.1
   astro: ^7.2.0
 
 # Holocron CLI and plugins — pinned in lockstep; bump together when running setup.
 catalogs:
   # Shared configs — release in lockstep; bump all entries together.
   configs:
-    '@theholocron/astro-config': ^8.2.0
-    '@theholocron/commitlint-config': ^8.2.0
-    '@theholocron/prettier-config': ^8.2.0
-    '@theholocron/semantic-release-config': ^8.2.0
-    '@theholocron/tsconfig': ^8.2.0
+    "@theholocron/astro-config": ^8.2.0
+    "@theholocron/commitlint-config": ^8.2.0
+    "@theholocron/prettier-config": ^8.2.0
+    "@theholocron/semantic-release-config": ^8.2.0
+    "@theholocron/tsconfig": ^8.2.0
   holocron:
-    '@theholocron/cli': ^4.17.0
-    '@theholocron/holocron-config': ^8.2.1
-    '@theholocron/holocron-plugin-cloudflare': ^4.17.0
-    '@theholocron/holocron-plugin-fern': ^4.17.0
-    '@theholocron/holocron-plugin-github': ^4.17.0
+    "@theholocron/cli": ^4.17.0
+    "@theholocron/holocron-config": ^8.2.1
+    "@theholocron/holocron-plugin-cloudflare": ^4.17.0
+    "@theholocron/holocron-plugin-fern": ^4.17.0
+    "@theholocron/holocron-plugin-github": ^4.17.0
 
 # Force a single TypeScript version across the graph so cosmiconfig doesn't
 # pick up a transitive TypeScript 7 when loading .ts config files.
