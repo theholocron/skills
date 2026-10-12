@@ -20,3 +20,4 @@ docs/dist/
 # end managed by holocron setup — prompts
 super-linter-output/
 test-report.junit.xml
+lcov.info
