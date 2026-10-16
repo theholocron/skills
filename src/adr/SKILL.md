@@ -23,7 +23,7 @@ Include:
 - Consequences
 - Related issue, Discussion, and specifications
 
-Clearly distinguish between the final decision, supporting rationale, and
+Succinctly distinguish between the final decision, supporting rationale, and
 alternatives that were rejected.
 
 Do not introduce new architectural decisions.
