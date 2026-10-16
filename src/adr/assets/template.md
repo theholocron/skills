@@ -55,3 +55,8 @@ Chosen option: **[Option A]**, because [one-sentence justification].
 
 - Good, because [argument]
 - Bad, because [argument]
+
+### [Option C — do nothing]
+
+- Good, because [argument]
+- Bad, because [argument]

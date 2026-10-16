@@ -34,10 +34,20 @@ confidently, identify the missing information instead of inventing it.
 ## Format
 
 Use MADR format. Start from this skill's template, `assets/template.md`
-(next to this file), and number the record sequentially:
+(next to this file). Number the record with the next unused number: list
+`docs/wiki/decisions/` first, and never reuse or overwrite an existing file.
 
 ```sh
-cp <path-to-this-skill>/assets/template.md docs/wiki/decisions/000N-short-title.md
+mkdir -p docs/wiki/decisions
+dest=docs/wiki/decisions/000N-short-title.md
+test ! -e "$dest" && cp <path-to-this-skill>/assets/template.md "$dest" \
+  || echo "$dest already exists — pick the next unused number"
 ```
+
+The template starts as `status: proposed`. This skill records decisions that
+were already accepted, so set `status: accepted` in the frontmatter and in the
+`Status` line, and set `date` to the acceptance date from the Discussion. Use a
+different status only when the Discussion says the decision was rejected,
+deprecated or superseded.
 
 `madr` has no CLI — creation is manual. Save to `docs/wiki/decisions/NNNN-<slug>.md`.
