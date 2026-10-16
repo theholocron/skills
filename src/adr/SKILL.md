@@ -33,10 +33,11 @@ confidently, identify the missing information instead of inventing it.
 
 ## Format
 
-Use MADR format. Copy the template and number sequentially:
+Use MADR format. Start from this skill's template, `assets/template.md`
+(next to this file), and number the record sequentially:
 
 ```sh
-cp docs/decisions/template.md docs/decisions/000N-short-title.md
+cp <path-to-this-skill>/assets/template.md docs/wiki/decisions/000N-short-title.md
 ```
 
-`madr` has no CLI — creation is manual. Save to `docs/decisions/NNNN-<slug>.md`.
+`madr` has no CLI — creation is manual. Save to `docs/wiki/decisions/NNNN-<slug>.md`.
